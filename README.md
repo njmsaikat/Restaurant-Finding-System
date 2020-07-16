@@ -14,6 +14,7 @@
 > Programming Language
 
 - PHP7
+- JavaScript
 
 > Database
 
@@ -27,3 +28,39 @@
 4. Multifunctional Admin Panel
 5. Dynamic Google Map Searching
 6. Multiple Searching Options
+
+**PHP CODE SAMPLE**
+
+> Single Section of Search Options
+
+```HTML
+	elseif ($r_names === $r_name && $food_prices !=="" && $food_names === "") {
+		if ($food_price>=$food_prices) {
+		// echo "restaurant name and food price search";
+		echo "<tr>";
+		echo "<td> <a href = 'restaurant_home.php?name=$r_name'>{$r_name}</a></td>";
+		echo "<td>{$rating} <span class='fa fa-star checked'></span> </td>";
+		echo "<td>{$r_address}</td>";
+		// <span class="fa fa-star checked"></span>
+		// <span class="fa fa-star checked"></span>
+	  // <span class="fa fa-star checked"></span>
+		// <span class="fa fa-star checked"></span>
+	  // <span class="fa fa-star"></span>
+		echo "</tr>";
+		}
+}
+```
+
+> Sample Restaurant Page
+
+![](resource/restaurant.jpg)
+
+> Admin Panel Overview
+
+![](resource/admin.png)
+
+ # Developers Team
+ 
+ [Saikat Roy](https://github.com/njmsaikat)
+ 
+ [Sadekur Rahman](https://github.com/Biplob14)
